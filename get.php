@@ -30,10 +30,10 @@ $prev = <<<htm
 <html>
 <head>
 	<META http-equiv="content-type" content="text/html; charset=UTF-8">
-    <link href="./resources/antd.min.css" type="text/css" rel="stylesheet"/>
-	<script src="./resources/jquery-1.8.2.min.js" type="text/javascript"></script>
-    <script src="./resources/jsonFormater.js" type="text/javascript"></script>
-    <link href="./resources/jsonFormater.css" type="text/css" rel="stylesheet"/>
+    <link href="/resources/antd.min.css" type="text/css" rel="stylesheet"/>
+	<script src="/resources/jquery-1.8.2.min.js" type="text/javascript"></script>
+    <script src="/resources/jsonFormater.js" type="text/javascript"></script>
+    <link href="/resources/jsonFormater.css" type="text/css" rel="stylesheet"/>
 	
 </head>
 <body>

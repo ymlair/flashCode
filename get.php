@@ -31,7 +31,7 @@ $prev = <<<htm
 <head>
 	<META http-equiv="content-type" content="text/html; charset=UTF-8">
     <link href="/resources/antd.min.css" type="text/css" rel="stylesheet"/>
-	<script src="/resources/jquery-1.8.2.min.js" type="text/javascript"></script>
+    <script src="/resources/jquery-1.8.2.min.js" type="text/javascript"></script>
     <script src="/resources/jsonFormater.js" type="text/javascript"></script>
     <link href="/resources/jsonFormater.css" type="text/css" rel="stylesheet"/>
 	
@@ -53,8 +53,18 @@ $prev = <<<htm
 			<span class="ant-breadcrumb-link">内容24小时后自动清除,系统不做任何形式的保留备份!</span>
 			<!-- <span class="ant-breadcrumb-separator">/</span> -->
 			</span>
+			<button type="button" style="float:right"  class="clip ant-btn ant-btn-dashed ant-btn-sm"><span>Copy Url</span></button>
 		</div>
-	
+<div>	
+<script src="/resources/clipboard.min.js"></script>
+<script>
+new ClipboardJS('.clip', {
+    text: function(trigger) {
+        return window.location.href;
+    }
+});
+</script>
+</div>
             
 		<div style="background: rgb(255, 255, 255); padding: 24px; min-height: 280px;">
 			<textarea id="RawJson" type="textarea" name="content" placeholder="Autosize height with minimum and maximum number of lines" class="ant-input" rows="20%" readonly="readonly">

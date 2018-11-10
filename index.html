@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<META http-equiv="content-type" content="text/html; charset=UTF-8">
-    <link href="/resources/antd.min.css" type="text/css" rel="stylesheet"/>
-	<script type="text/javascript" src="/resources/antd.min.js"></script>
-	
-</head>
-<body>
+  
+  <head>
+    <META http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link href="/resources/antd.min.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="/resources/antd.min.js"></script>
+  </head>
+  
+  <body>
+    <div class="layout ant-layout">
+      <div class="ant-layout-header">
+        <div class="logo"></div>
+        <ul class="ant-menu ant-menu-horizontal  ant-menu-dark ant-menu-root" role="menu" aria-activedescendant="" tabindex="0" style="line-height: 64px;">
+		<li class="ant-menu-item" role="menuitem" aria-selected="false">~</li>
+		<li class="ant-menu-item-selected ant-menu-item" role="menuitem" aria-selected="true">随意贴</li>
+		<li class="ant-menu-item" role="menuitem" aria-selected="false">~</li>
+		</ul>	
+      </div>
+      <div class="ant-layout-content" style="padding: 0px 50px;">
+        <div class="ant-breadcrumb" style="margin: 12px 0px;">
+		<span class="ant-breadcrumb-link">内容24小时后自动清除,系统不做任何形式的保留备份!</span>
+		</span>
 
-<div class="layout ant-layout"><div class="ant-layout-header"><div class="logo"></div><ul class="ant-menu ant-menu-horizontal  ant-menu-dark ant-menu-root" role="menu" aria-activedescendant="" tabindex="0" style="line-height: 64px;"><li class="ant-menu-item" role="menuitem" aria-selected="false">nav 1</li><li class="ant-menu-item-selected ant-menu-item" role="menuitem" aria-selected="true">nav 2</li><li class="ant-menu-item" role="menuitem" aria-selected="false">nav 3</li></ul></div><div class="ant-layout-content" style="padding: 0px 50px;"><div class="ant-breadcrumb" style="margin: 12px 0px;"><span><span class="ant-breadcrumb-link">Home</span><span class="ant-breadcrumb-separator">/</span></span><span><span class="ant-breadcrumb-link">List</span><span class="ant-breadcrumb-separator">/</span></span><span><span class="ant-breadcrumb-link">App</span><span class="ant-breadcrumb-separator">/</span></span></div>
-<div style="background: rgb(255, 255, 255); padding: 24px; min-height: 280px;">
+        </div>
+        <div style="background: rgb(255, 255, 255); padding: 24px; min-height: 280px;">
+          <!-- <div class="ant-row"></div>
+          <div class="ant-row"></div> -->
+          <form action="pi.php" method="POST">
+            <input type="submit" class="ant-btn" />
+            <textarea type="textarea" name="content" placeholder="Autosize height with minimum and maximum number of lines" class="ant-input" rows="20%"></textarea>
+          </form>
+        </div>
+      </div>
+      <div class="ant-layout-footer" style="text-align: center;">Ant Design ©2017 Created by Ant UED</div></div>
+  </body>
 
-<!-- <div class="ant-row"></div>
-<div class="ant-row"></div> -->
-<form action="pi.php" method="POST">
-<input type="submit" class="ant-btn" />
-<textarea type="textarea" name="content" placeholder="Autosize height with minimum and maximum number of lines" class="ant-input" rows="20%"></textarea>
-</form>
-
-
-</div></div>
-<div class="ant-layout-footer" style="text-align: center;">Ant Design ©2017 Created by Ant UED</div></div>
-
-</body>
 </html>
-

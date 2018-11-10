@@ -1,5 +1,11 @@
 {
     "require": {
         "catfan/Medoo": "^1.2"
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.laravel-china.org"
+        }
     }
 }

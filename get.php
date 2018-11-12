@@ -9,6 +9,9 @@ $database = new Medoo($dbConfig);
     
 $str = trim(parse_url($_SERVER['PATH_INFO'], PHP_URL_PATH),'/');
 
+#删除过期数据
+$database->query("delete from pi_content where expire < ". time());
+
 # 取出文本
 if(is_numeric($str)){
 	$content = $database->get('pi_content','content',['randstr'=>$str]);
